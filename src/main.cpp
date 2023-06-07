@@ -135,7 +135,7 @@ String SendHTML(uint8_t led1stat, uint8_t led2stat)
   HTML += "<h1><font color=\" #f5f5f5 \">ESP32 Web Server</font></h1>\n";
   // HTML += "<h3>Using Access Point(AP) Mode</h3>\n";
   HTML += "<p> this is a very simple demo for the IoT course by:<br> <font color=\" #6d93c9 \"> Abdullah Al-Daigani </font> and <font color=\" #6d93c9 \">Bader Al-Dakhil Allah</font></p>";
-  HTML += "<p> <br </p>";
+  HTML += "<p> <br> </p>";
   if (led1stat)
   {
     HTML += "<p>LED1 Status: ON</p><a class=\"button button-off\" href=\"/led1off\">turn OFF</a>\n";
@@ -158,6 +158,7 @@ String SendHTML(uint8_t led1stat, uint8_t led2stat)
 
   HTML += "</body>\n";
   HTML += "</html>\n";
+
   return HTML;
 }
 
